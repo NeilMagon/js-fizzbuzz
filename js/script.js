@@ -10,20 +10,31 @@ console.log(container)
 for (let i = 1; i <= 100; i++) {
     console.log(i)
     // creo la variabile fizzBuzz
-    let fizzBuzz;
+    let fizzBuzz = i;
     // se diviso per 3 e 5 da riporto 0 scrive FizzBuzz
-    if (i % 3 === 0 & i % 5 === 0) {
-        fizzBuzz = `FizzBuzz`;
+    if (i % 3 === 0 && i % 5 === 0) {
+        fizzBuzz = `fizzbuzz`;
         // se diviso per 3 da riporto 0 scrive Fizz
     } else if (i % 3 === 0) {
-        fizzBuzz = `Fizz`;
+        fizzBuzz = `fizz`;
         // se diviso per 5 da riporto 0 scrive Buzz
     } else if (i % 5 === 0) {
-        fizzBuzz = `Buzz`;
+        fizzBuzz = `buzz`;
     }
     console.log(fizzBuzz)
 }
 const numberBox = `<div class="box ${fizzBuzz}">${i}</div>`;
+console.log(numberBox)
 
 container.innerHTML += numberBox;
+
+
+// const newBox = document.createElement('div');
+
+// newBox.innerHTML = i;
+// newBox.classList.add('box');
+// newBox.classList.add(fizzBuzz);
+// console.log(newBox);
+
+// container.append(newBox)
 
