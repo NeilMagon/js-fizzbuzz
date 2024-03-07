@@ -22,19 +22,21 @@ for (let i = 1; i <= 100; i++) {
         fizzBuzz = `buzz`;
     }
     console.log(fizzBuzz)
+    const numberBox = `<div class="box ${fizzBuzz}">${i}</div>`;
+    console.log(numberBox)
+
+    container.innerHTML += numberBox;
+
+    // const numberBox = document.createElement('div');
+
+    // numberBox.innerHTML = i;
+    // numberBox.classList.add('box');
+    // numberBox.classList.add(fizzBuzz);
+    // console.log(numberBox);
+
+    // container.append(numberBox)
 }
-const numberBox = `<div class="box ${fizzBuzz}">${i}</div>`;
-console.log(numberBox)
-
-container.innerHTML += numberBox;
 
 
-// const newBox = document.createElement('div');
 
-// newBox.innerHTML = i;
-// newBox.classList.add('box');
-// newBox.classList.add(fizzBuzz);
-// console.log(newBox);
-
-// container.append(newBox)
 
